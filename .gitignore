@@ -1,0 +1,8 @@
+*.pyc
+*.pyo
+local_settings.py
+*~
+*.css~
+*.html~
+*.BKUP
+*.BKUP~
