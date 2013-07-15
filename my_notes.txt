@@ -4,7 +4,12 @@ Create a program that can interactively play the game of Tic-Tac-Toe against a h
 DESIGN:
 
 Create a Tic-Tac-Toe game board
+each square of the game board will be a voting box for the player to select
+when the computer selects a square, that check box will be grayed out, preventing the player from selecting it.
+
 Prompt the player to pick a square
+
+
 The computer then picks a square
 Prompt the player to pick a square
 The computer then picks a square

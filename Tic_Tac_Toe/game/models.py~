@@ -1,0 +1,9 @@
+from django.db import models
+
+class Game(models.Model):
+    
+    pass
+
+class Choice(models.Model):
+    game = models.ForeignKey(Game)
+    
