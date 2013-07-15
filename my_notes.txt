@@ -1,0 +1,13 @@
+OBJECTIVE:
+Create a program that can interactively play the game of Tic-Tac-Toe against a human player and never lose.
+
+DESIGN:
+
+Create a Tic-Tac-Toe game board
+Prompt the player to pick a square
+The computer then picks a square
+Prompt the player to pick a square
+The computer then picks a square
+This process is repeated until there is a winner.
+
+
