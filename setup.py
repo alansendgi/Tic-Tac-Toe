@@ -8,5 +8,8 @@ setup(
     author_email='asendgi@gmail.com',
     install_requires=[
         'Django==1.5.1',
+        'selenium',
+        'mock',
+        'unittest2',  # (only if using Python 2.6)
     ]
 )
