@@ -1,18 +1,27 @@
 OBJECTIVE:
 Create a program that can interactively play the game of Tic-Tac-Toe against a human player and never lose.
 
+PROGRESS:
+create django project
+create django app "game"
+create the first functional test: The Django admin site
+
+
 DESIGN:
+computer asks the human player to select X or O
+computer asks the human player to go first
+computer displays the game board
+the game starts
+computer asks the human player to make his move
+the computer makes a move
+the last 2 steps are repeated until the computer wins
 
-Create a Tic-Tac-Toe game board
-each square of the game board will be a voting box for the player to select
-when the computer selects a square, that check box will be grayed out, preventing the player from selecting it.
+Notes:
+after each move (human player or computer), the computer checks:
+   is there a winner
+   is the game a draw
+if there is a winner, game ends and player is invited to play again
+if the game is a draw, game ends and player is invited to play again
 
-Prompt the player to pick a square
-
-
-The computer then picks a square
-Prompt the player to pick a square
-The computer then picks a square
-This process is repeated until there is a winner.
 
 
