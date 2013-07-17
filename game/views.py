@@ -1,4 +1,10 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the game index.")
+def index_page(request):
+	return render(request, 'game/index.html', {})
+
+def game_page(request):
+    return render(request, 'game/game.html', {})
+    
+def about_page(request):
+    return render(request, 'game/about.html', {})
