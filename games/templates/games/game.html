@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block contents %}
+
+{% include "top_bar.html" %}
+
+    <div class="wrapper">
+      <div class="container">
+        <div class="game">
+          <div class="row">
+          {% for position in all_positions %}
+            <div class="square">
+            {% if position in com_positions %}
+              <strong class="computer">O</strong>
+              {% endif %}
+              {% if position in plr_positions %}
+              <strong>X</strong>
+              {% endif %}
+              {% if position in avl_positions %}
+              <a href="{% url make_move position %}">X</a>
+              {% endif %}
+            </div><!--/.square-->
+            {% endfor %}
+          </div><!--/.row-->
+        </div><!--/.game-->
+      </div><!--/.container-->
+    </div><!--/.wrapper-->
+   
+{% endblock %}

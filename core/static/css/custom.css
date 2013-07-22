@@ -1,21 +1,10 @@
-/*!
- *
- * Copyright 2013 Architech Homes
- * 
- * 
- *
- */
+/*
+CSS settings that I customize go here. These override or supplement the 
+settings provided by Bootstrap.
+*/
 
 /* Html */
-/*
-html {
-  background: url("../img/SYH_background_940.jpg") no-repeat center top scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-*/
+
 body {
   margin: 0;
   font-family: 'Trebuchet MS', Arial, sans-serif;
@@ -286,6 +275,14 @@ textarea {
   color: #888888;
 }
 
+/* Buttons */
+
+.btn {
+  padding: 22px 42px;
+}
+
+
+
 /* Index */
 
 
@@ -361,3 +358,7 @@ textarea {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+/* Tic-Tac-Toe styles */
+
+

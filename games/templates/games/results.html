@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block contents %}
+
+  <h1>Tic-Tac-Toe Django</h1>
+  <h2>{{ game.question }}</h2>
+
+  <ul>
+  {% for choice in game.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.totals }} pick{{ choice.play|pluralize }}</li>
+  {% endfor %}
+  </ul>
+  
+  {% if totals in choice.totals > 1 %}
+    <b>You must select an open square.</b>
+  {% endif %}
+  
+  <a href="{% url 'games:detail' game.id %}">Play again?</a>
+  
+{% endblock %}

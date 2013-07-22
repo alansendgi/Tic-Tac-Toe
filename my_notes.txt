@@ -5,6 +5,8 @@ PROGRESS:
 create django project
 create django app "game"
 create the first functional test: The Django admin site
+update urls.py and views.py, and work on templates
+create page layout
 
 
 DESIGN:

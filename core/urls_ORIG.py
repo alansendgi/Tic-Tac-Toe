@@ -4,7 +4,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^games/', include('games.urls', namespace="games")),
+    url(r'^$', 'game.views.index_page', name='index'),
+    url(r'^game/', 'game.views.game_page', name='board'),
     
     url(r'^admin/', include(admin.site.urls)),
 )

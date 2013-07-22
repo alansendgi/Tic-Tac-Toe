@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block contents %}
+
+<h2>{{ poll.question }}</h2>
+
+<form action="/polls/1/vote/" method="post">
+{% csrf_token %}
+
+    <button class="btn btn-primary" type="submit" name="choice" id="choice1" value="1" />
+    <label for="choice1">1</label></button>
+
+    <button class="btn btn-primary" type="submit" name="choice" id="choice2" value="2" />
+    <label for="choice2">2</label></button>
+
+    <button class="btn btn-primary" type="submit" name="choice" id="choice3" value="3" />
+    <label for="choice3">3</label></button><br />
+
+    <button class="btn btn-primary" type="submit" name="choice" id="choice4" value="4" />
+    <label for="choice4">4</label></button>
+
+    <button class="btn btn-primary" type="submit" name="choice" id="choice5" value="5" />
+    <label for="choice5">5</label></button>
+
+    <button class="btn btn-primary" type="submit" name="choice" id="choice6" value="6" />
+    <label for="choice6">6</label></button><br />
+
+    <button class="btn btn-primary" type="submit" name="choice" id="choice7" value="7" />
+    <label for="choice7">7</label></button>
+
+    <button class="btn btn-primary" type="submit" name="choice" id="choice8" value="8" />
+    <label for="choice8">8</label></button>
+
+    <button class="btn btn-primary" type="submit" name="choice" id="choice9" value="9" />
+    <label for="choice9">9</label></button><br />
+    
+</form>
+
+{% endblock %}
