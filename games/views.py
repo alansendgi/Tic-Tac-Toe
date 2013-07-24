@@ -52,7 +52,7 @@ def play(request, game_id):
     """
     
     p = get_object_or_404(Game, pk=game_id)
-    """get the game_id for Game"""
+    # Verify the game exists, and get the game_id
     selected_choice = p.choice_set.get(pk=request.POST['choice'])
     selected_choice.totals += 1
     selected_choice.save()
@@ -73,3 +73,16 @@ def play(request, game_id):
     # with POST data. This prevents data from being posted twice if a
     # user hits the Back button.
     return HttpResponseRedirect(reverse('games:results', args=(p.id,)))
+    
+def reset_game(request, game_id):
+    """
+    Reset poll votes to 0
+    """
+    if request.method == 'POST':
+        # Verify the game exists
+        p = get_object_or_404(Game, pk=game_id)
+        # Reset game to 0 totals
+        game.choice.all().update(totals=0)
+        
+        return HttpResponseRedirect(reverse('games_game_reset', args=(p.id,)))
+    return HttpResponseRedirect("Not a POST request or bad POST data.")

@@ -42,5 +42,10 @@
   </form>
   
   <a href="{% url 'games:index' %}">Start over?</a>
+  {# <a href="" >Delete</a> #}
+  <form method="post" action="{% url games_game_reset item.game.id %}" id="game_reset_form">
+    {% csrf_token %}
+    <input class="submit" type="submit" value="Reset">
+  </form>
   
 {% endblock %}
