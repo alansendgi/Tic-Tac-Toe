@@ -1,5 +1,9 @@
 from django.contrib import admin
 from games.models import Choice, Game
+"""
+Still contains left-overs from the 'Polls' tutorial, 
+but I adapted them to make this app work.
+"""
 
 class ChoiceInline(admin.TabularInline):
     model = Choice

@@ -4,9 +4,11 @@
 
   <h1>Tic-Tac-Toe Django</h1>
   <h2>{{ game.question }}</h2>
+  <h2>You can be <b>X</b>, and I will be <b>O</b>, okay?</h2>
+  <h3>I'm glad you agree.</h3>
 
   {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-
+  <!-- Needs improvement -->
   <form action="/games/1/play/" method="post">
   {% csrf_token %}
 

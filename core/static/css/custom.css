@@ -361,4 +361,22 @@ textarea {
 
 /* Tic-Tac-Toe styles */
 
+div.player-x {
+    background: url('/static/games/x.png');
+    height: 90px;
+    width: 90px;
+}
+
+div.player-o {
+    background: url('/static/games/o.png');
+    height: 90px;
+    width: 90px;
+}
+
+div.blank {
+    background: url('/static/games/blank.png');
+    height: 90px;
+    width: 90px;
+}
+
 
